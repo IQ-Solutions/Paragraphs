@@ -1,0 +1,39 @@
+.full-width {
+  width:100%;
+  height:auto;
+  @extend .clearfix;
+}
+.float-left, .float-right {
+  &.photo {
+    margin-bottom:1em;
+    overflow: hidden;
+    border-radius:5px;
+    width:100%;
+    @media screen and (min-width: $break-small){
+      margin-bottom:2em;
+      width:35%;
+    }
+    img {
+      width:100%;
+      height:auto;
+      display:block;
+    }
+  }
+}
+
+.float-left {
+  float:left;
+  &.photo {
+    @media screen and (min-width: $break-small){
+      margin-right:2em;
+    }
+  }
+}
+.float-right {
+  float:right;
+  &.photo {
+    @media screen and (min-width: $break-small){
+      margin-left:2em;
+    }
+  }
+}

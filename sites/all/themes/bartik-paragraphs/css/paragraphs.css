@@ -1,0 +1,59 @@
+/* variables for responsive breakpoints */
+.full-width {
+  width: 100%;
+  height: auto; }
+
+.float-left.photo, .float-right.photo {
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%; }
+  @media screen and (min-width: 481px) {
+    .float-left.photo, .float-right.photo {
+      margin-bottom: 2em;
+      width: 35%; } }
+  .float-left.photo img, .float-right.photo img {
+    width: 100%;
+    height: auto;
+    display: block; }
+
+.float-left {
+  float: left; }
+  @media screen and (min-width: 481px) {
+    .float-left.photo {
+      margin-right: 2em; } }
+
+.float-right {
+  float: right; }
+  @media screen and (min-width: 481px) {
+    .float-right.photo {
+      margin-left: 2em; } }
+
+.player {
+  margin-bottom: 1em; }
+  .player iframe {
+    max-width: 100% !important;
+    height: 330px !important; }
+
+.inline-block {
+  display: inline-block; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+/*Misc Helpers */
+.clearfix:after, .full-width:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=paragraphs.css.map */
